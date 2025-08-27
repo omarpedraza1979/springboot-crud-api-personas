@@ -1,12 +1,12 @@
 
 # 🚀 Spring Boot REST API - Customers CRUD
 
-API REST construida con Spring Boot que implementa operaciones CRUD sobre una lista de personas existentes en BD MySQL.
+API REST construida con Spring Boot que implementa operaciones CRUD (Create, Read, Update, Delete) sobre una lista de personas existentes en BD MySQL.
 Este proyecto sirve como base para aprender desarrollo con Spring Boot y probar endpoints REST usando Postman.
 Se utilizan los conceptos de Repository, Service.
 
 ## 📌 Características
-- ✅ CRUD completo (Create, Read, Update, Delete) sobre lista JSON en memoria.  
+- ✅ CRUD completo (Create, Read, Update, Delete).  
 - ✅ API REST construida con Spring Boot.
 - ✅ Persistencia en BD MySQL
 
