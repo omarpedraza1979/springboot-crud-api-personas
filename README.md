@@ -81,14 +81,45 @@ http://localhost:8080
 
 1. Listar todos las personas (GET)
 
+ curl -X GET http://localhost:8080/personas
 
+2. Buscar persona por login/username
+
+ curl -X POST http://localhost:8080/login \
+     -H "Content-Type: application/json" \
+     -d '{
+           "login": "jugom",
+           "password": "888844"
+         }'
 
 2. Crear una nueva persona (POST)
 
+ curl -X POST http://localhost:8080/guardarPersona \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nombre": "Pablo Gomez",
+           "telefono": "123456789",
+           "ubicacion": "Cra 19 17-65",
+           "login": "453535",
+           "password": "567657567"
+         }'
+  
+  
+3. Actualizar persona
+
+ curl -X PUT http://localhost:8080/editarPersona/1 \
+     -H "Content-Type: application/json" \
+     -d '{
+           "nombre": "Pablo Garcia",
+           "telefono": "987654321",
+           "ubicacion": "Cra 19 17-65",
+           "login": "453535",
+           "password": "nuevaContraseña"
+         }'  
   
 3. Eliminar persona por ID (DELETE)
 
-
+ curl -X DELETE http://localhost:8080/borrarPersona/1
 
 
 ## 🧪 Postman
