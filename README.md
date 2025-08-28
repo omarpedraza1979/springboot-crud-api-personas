@@ -79,8 +79,7 @@ http://localhost:8080
 ## 🧪 Ejemplo con CURL
 
 
-# 1. Listar todos las personas (GET)
-
+**1. Listar todos las personas (GET)**
 
  curl -X GET http://localhost:8080/personas
 
@@ -93,7 +92,7 @@ http://localhost:8080
            "password": "888844"
          }'
 
-2. Crear una nueva persona (POST)
+**2. Crear una nueva persona (POST)**
 
  curl -X POST http://localhost:8080/guardarPersona \
      -H "Content-Type: application/json" \
@@ -105,8 +104,7 @@ http://localhost:8080
            "password": "567657567"
          }'
   
-  
-3. Actualizar persona
+**3. Actualizar persona**
 
  curl -X PUT http://localhost:8080/editarPersona/1 \
      -H "Content-Type: application/json" \
@@ -118,7 +116,7 @@ http://localhost:8080
            "password": "nuevaContraseña"
          }'  
   
-3. Eliminar persona por ID (DELETE)
+**3. Eliminar persona por ID (DELETE)**
 
  curl -X DELETE http://localhost:8080/borrarPersona/1
 
