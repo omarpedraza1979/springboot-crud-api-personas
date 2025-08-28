@@ -79,11 +79,12 @@ http://localhost:8080
 ## 🧪 Ejemplo con CURL
 
 
-1. Listar todos las personas (GET)
+# 1. Listar todos las personas (GET)
+
 
  curl -X GET http://localhost:8080/personas
 
-2. Buscar persona por login/username
+**2. Buscar persona por login/username**
 
  curl -X POST http://localhost:8080/login \
      -H "Content-Type: application/json" \
